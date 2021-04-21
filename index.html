@@ -3,67 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tribute PageF</title>
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <style>
       body {
-        line-height: 1.5;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.5;
+      text-align: center;
+      font-size: 90%;
       }
       #mainDiv {
         background: #eee;
         margin: 15px 8px;
         border-radius: 5px;
-        padding: 30px;
+        padding: 15px;
       }
       #mainDiv h1 {
-        font-size: 3rem;
         color: #333333;
-        text-align: center;
+        margin-bottom: 0;
+        font-size: 3em;
       }
       #mainDiv p {
         color: #333;
-        text-align: center;
+        
       }
       #mainDiv div {
         color: white;
         margin: -3px;
-        padding: 30px;
+        padding: 10px;
         background-color: white;
-        text-align: center;
+        
       }
       #mainDiv div p {
         color: #333;
         line-height: 40px;
-        font-size: 22px;
-        text-align: center;
       }
-      #mainDiv h2 {
-        font-size: 35px;
-        text-align: center;
-      }
+      #mainDiv ul{        margin: 0 auto 50px auto;
+      max-width: 550px;
+}
       #mainDiv ul li {
-        margin: 0px 20%;
-        font-size: 25px;
-        padding: 15px;
+        padding: 16px 0;
         text-align: left;
+        opacity: 0.8;
       }
       blockquote p {
-        font-size: 25px;
         font-style: italic;
-      }
-      blockquote {
-        text-align: center;
       }
       blockquote cite {
-        font-size: 25px;
         font-style: italic;
-      }
-      h3 {
-        text-align: center;
-        font-size: 30px;
       }
       #mainDiv div img {
         width: 90%;
       }
+
+      @media(max-width:550px){
+        
+    #mainDiv div p{
+      line-height: 20px;
+    }
+    .link{
+      font-size: 14px;
+    }
+      }
+
+      @media(max-width:360px){
+        body{
+          font-size: 80%;
+        }
+        #mainDiv{
+          margin: 15px 0;
+        }
+   #mainDiv h1{
+     font-size: 2em;
+   }
+   #mainDiv div img{
+     width: 100%;
+   }
+   #mainDiv ul{
+     margin: 0;
+     padding: 1em;
+   }
+   blockquote{
+     margin: 0;
+   }
+      }
+
     </style>
   </head>
   <body>
@@ -157,15 +182,15 @@
       <blockquote>
         <p>
           "Borlaug's life and achievement are testimony to the
-          far-reachingcontribution<br />that one man's towering intellect,
-          persistence and scientific vision can make to<br />human peace and
+          far-reaching contribution that one man's towering intellect,
+          persistence and scientific vision can make to human peace and
           progress."
         </p>
         <cite>-- Indian Prime Minister Manmohan Singh</cite>
       </blockquote>
-      <h3>
+      <h3 class="link">
         If you have time, you should read more about this incredible human being
-        on his<a
+        on his <a
           id="tribute-link"
           href="https://en.wikipedia.org/wiki/Norman_Borlaug"
           target="_blank"
